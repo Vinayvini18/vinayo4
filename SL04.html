@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            LAb04
+        </title>
+        <style>
+            .a1{
+            text-align: center;
+            background-color: white;
+            width: 600px;
+            border: 15px solid orangered;
+            border-style: groove;
+            padding: 90px;
+            margin-left: 370px;
+            margin-top: 100px;
+            }
+            .a2{
+            align-self: center;
+            background-color: whitesmoke;
+            width: 1000px;
+            border: 15px solid lightgrey;
+            border-style: groove;
+            padding: 100px;
+            margin-left: 200px;
+            margin-top: 100px;
+            text-align: center;
+            }
+            .a3 {
+            text-align: center;
+            background-color: lightgrey;
+            width: 650px;
+            border: 15px solid green;
+            border-style: groove;
+            padding: 50px;
+            margin-left: 420px;
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+        </style>
+        
+        <script>
+             function MyName() {
+            alert("Vinay kumar");
+        }
+        function MyReg_no() {
+            alert("202000361 ");
+        }
+        function largePic(x) {
+            x.style.width = "640px";
+            x.style.height = "360px";
+        }
+        function normPic(x) {
+            x.style.width = "320px";
+            x.style.height = "180px";
+        }
+        function mouseOver() {
+            document.getElementById("demo").style.fontSize = "120px";
+        }
+        function mouseOut() {
+            document.getElementById("demo").style.fontSize = "60px";
+        }
+        </script>
+        <body>
+            <div class="a1">
+                   <h1>click on the below button to see alerts</h1>
+                   <button onclick="MyName()">
+                   <h1>Name</h1>
+                   </button>
+                   <button onclick="MyReg_no()">
+                   <h2>reg.no</h2> 
+                   </button>
+              </div>
+        <div class="a2">
+                <img onmouseover="largePic(this)" onmouseout="normPic(this)"
+                src="virat.jpg"
+                 width="320px" height="180px">
+                 <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">VIRAT KOHLI</h1>
+        </div>
+            <div class="a3">
+                <h2>vinaykrishna3763@gmail.com</h2>
+            </div>
+        </body>
+    </head>
+</html>
